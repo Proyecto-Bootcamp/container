@@ -1,0 +1,14 @@
+{
+  "extends": "ts-config-single-spa",
+  "files": ["src/bootcamp-root-config.ts"],
+  "compilerOptions": {
+    "declarationDir": "dist"
+  },
+  "paths": {
+    "@angular/*": [
+       "./node_modules/@angular/*"
+    ],
+ },
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.test*"]
+}
